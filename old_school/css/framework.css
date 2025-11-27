@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.menu{
+	position: fixed;
+	top: 75px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 101;
+}
+
+.menu_center{
+	height: 65px;
+	width: 960px;
+	margin: auto;
+}
+
+.contact{
+	width: 100%;
+	height: 800px;
+	background: #000 url(../images/wrap_bg.jpg) no-repeat center;
+}
+
+.contact_content {
+	margin: auto;
+	width: 960px;
+	text-align: left;
+	padding-top: 50px;
+}
+
+.contact_border{
+	width: 100%;
+	height: 10px;
+	background-color: #0CF;
+}
+
+.content {
+	margin: auto;
+	width: 960px;
+	text-align: left;
+}
+
+.bg_top{
+	width: 100%;
+	height:600px;
+}
+
+.top-margin{
+	margin: 600px 0 600px 0;
+}

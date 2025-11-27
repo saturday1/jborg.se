@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Roadway';
+    src: url('roadway_-webfont.eot');
+    src: url('roadway_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roadway_-webfont.woff') format('woff'),
+         url('roadway_-webfont.ttf') format('truetype'),
+         url('roadway_-webfont.svg#RoadwayRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

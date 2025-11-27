@@ -1,0 +1,927 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Joakim Borg</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="" />
+        <meta name="keywords" content=""/>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        
+        <link rel="stylesheet" href="font/import_font.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/modules.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/base.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/framework.css" type="text/css" media="screen"/>
+        <!--[if lte IE 8]>
+        <style>
+			.menu{
+				position: fixed;
+				top: 75px;
+				width: 100%;
+				background-color: #000;
+				z-index: 101;
+			}
+		</style>
+        <![endif]-->
+        
+        <script type="text/javascript" src="jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery/mail_ajax.js"></script>
+        <script type="text/javascript" src="jquery/swfobject.js"></script>
+        <script type="text/javascript" src="jquery/jquery_preload_images.js"></script>
+        <script type="text/javascript" src="jquery/jquery_scripts_start.js"></script>
+    </head>
+
+    <body>
+    	<!-- Scroll to top layer -->
+        <div style="position: fixed; bottom: 0;">
+            <div id="bottomlayer">
+                <a href="#top" class="scroll"><img src="images/arrow_up.png" alt="Scroll up" id="follower" class="hover" /></a>
+            </div>
+		</div>
+        <!-- Menu start (Fixed) -->
+        <div class="menu">
+            <div class="menu_center">
+                <ul id="sdt_menu" class="sdt_menu">
+                    <li>
+                        <a href="#about" class="scroll">
+                            <img src="images/menu_about.png" alt="About me"/>
+                            <span class="sdt_active"></span>
+                            <span class="sdt_wrap">
+                                <span class="sdt_link">About me</span>
+                                <span class="sdt_descr">A little this &amp; that</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#digital" class="scroll">
+                            <img src="images/menu_digital.png" alt="Digital"/>
+                            <span class="sdt_active"></span>
+                            <span class="sdt_wrap">
+                                <span class="sdt_link">Digital</span>
+                                <span class="sdt_descr">Interactive things</span>
+                            </span>
+                        </a>
+                        <div class="sdt_box">
+                                <a href="#web" class="scroll">Web sites</a>
+                                <a href="#newsletter" class="scroll">Newsletters</a>
+                                <a href="#exprimental" class="scroll">Exprimental</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#print" class="scroll">
+                            <img src="images/menu_print.png" alt="Print"/>
+                            <span class="sdt_active"></span>
+                            <span class="sdt_wrap">
+                                <span class="sdt_link">Print</span>
+                                <span class="sdt_descr">Not so interactive</span>
+                            </span>
+                        </a>
+                        <div class="sdt_box">
+                                <a href="#catalogues" class="scroll">Catalogues &amp; folders</a>
+                                <a href="#posters" class="scroll">Posters &amp; similar</a>
+                                <a href="#external" class="scroll">External campaigns</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#brand" class="scroll">
+                            <img src="images/menu_brand.png" alt="Brand"/>
+                            <span class="sdt_active"></span>
+                            <span class="sdt_wrap">
+                                <span class="sdt_link">Branding</span>
+                                <span class="sdt_descr">&#x266A; Hooked on a feeling!</span>
+                            </span>
+                        </a>
+                        <div class="sdt_box">
+                                <a href="#logo" class="scroll">Logotypes</a>
+                                <a href="#guidelines" class="scroll">Guidelines</a>
+                                <a href="#stationary" class="scroll">Stationary</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#resume" class="scroll">
+                            <img src="images/menu_resume.png" alt="Resume"/>
+                            <span class="sdt_active"></span>
+                            <span class="sdt_wrap">
+                                <span class="sdt_link">Resume</span>
+                                <span class="sdt_descr">CV &amp; some other stuff</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="scroll">
+                            <img src="images/menu_contact.png" alt=""/>
+                            <span class="sdt_active"></span>
+                            <span class="sdt_wrap">
+                                <span class="sdt_link">Contact</span>
+                                <span class="sdt_descr">Hello! Hej! Bonjour!</span>
+                            </span>
+                         </a>
+                            <div class="sdt_box">
+                                <a href="#contact" class="scroll">Contact information</a>
+                                <a href="#contact" class="scroll">Contact form</a>
+                                <a href="#contact" class="scroll">References</a>
+                        	</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Menu end (Fixed)-->
+        <!-- Arrows start (Fixed) -->
+        <div style="position: absolute; left: 20px; top: 250px; z-index:100;">
+        	<a href="#" id="prev" class="arrow"><img src="images/arrow_left.png" alt="arrow left" class="hover" /></a>
+        </div>
+        <div style="position: absolute; right: 20px; top: 250px; z-index:100;">
+        	<a href="#" id="next" class="arrow"><img src="images/arrow_right.png" alt="arrow right" class="hover" /></a>
+        </div>
+        <!-- Arrows end (Fixed) -->
+        
+        <!-- Living elements start -->
+        <!-- Top projects fader -->
+        <div class="top_projects" id="top">
+        	<div class="slideshow" style="height: 600px;">
+                <div class="top_project">
+                	<div class="top_projects_center"><a href="#project_01" class="scroll"><img src="images/top_project01.png" alt="Top project" /></a></div>
+                </div>
+                <div class="top_project">
+                	<div class="top_projects_center"><a href="#project_02" class="scroll"><img src="images/top_project02.png" alt="Top project" /></a></div>
+                </div>
+                <div class="top_project">
+                	<div class="top_projects_center"><a href="#project_03" class="scroll"><img src="images/top_project03.png" alt="Top project" /></a></div>
+                </div>
+                <div class="top_project">
+                	<div class="top_projects_center"><a href="#project_04" class="scroll"><img src="images/top_project04.png" alt="Top project" /></a></div>
+                </div>
+                <div class="top_project">
+                	<div class="top_projects_center"><a href="#project_05" class="scroll"><img src="images/top_project05.png" alt="Top project" /></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_border"></div>
+        <!-- End projects fader -->
+        <!-- Content start -->
+        <div class="content">
+            <div class="top_projects_center">
+                <div style="margin: 13px 0 0 10px; position: absolute; top: -610px; left:0; z-index:99;" >
+                    <img src="images/logo.png" alt="Joakim Borg logotype" />
+                </div>
+            </div>
+            
+            <div class="top-margin" style="margin-top: 20px; clear: both; overflow: hidden;" id="about"><h1>About me</h1>
+            	<div style="float:left; width:460px; margin-right: 40px;">
+                <img src="images/me.jpg" alt="" style="float: left; margin-right: 22px;" />
+                <p><span style="font-weight: bold;">HI!</span> I have a wide spectra of knowledge within new media. I am a Graphic Designer and Web Developer. I have a burning desire for both web and print.</p>
+                <p>I have been working and produced almost everything from external print promotions with a budget of millions to advanced database solutions for the web and almost everything inbetween.</p>
+                <p>If I have to put one job title on myself I guess I would call myself a <span style="font-style: italic;">passionated general specialist within new media</span>. I love to do it all, but my heart beats a little bit extra when it comes to interactive things - where design strengthen the functions and functions strengthen the design.</p>
+                
+                <p>I have designed and created everything from logotypes, graphic profiles, catalogues, bags, posters in all various formats, flyers, invitations, brochures, packaging, stickers, web sites, CMS, newsletters and other various digital applications.</p>
+                </div>
+                <div style="float:left; width:460px;">
+                <p>And I am usually working all the way from the idea to the final product.</p>
+                <p>Apart from the design work, as mentioned above, I am doing a lot of programming, both for front-end and back-end solutions. I am used to create and develop back-end solutions with databases and I have created various web applications with back-end solutions.</p>
+
+<p>I am currently working, since five years, as Graphic Designer and Web Developer Nordic at GameStop. GameStop is an international company and the world's largest game retailer with over 6500 stores world wide. I am highly experienced within my working position and I have been active in new media, in various ways, in over 15 years.</p>
+
+<p>Beside creating beautiful things with great functions I am a proud father who enjoy to be social, working out, adrenaline, humor, art, laughing and make people laugh and surrounding myself with lovely people!</p>
+			<p>I really hope you find this interesting, hear from you soon!</p></div>
+			</div>
+            <div id="digital" class="top-margin" style="overflow: hidden;"><h1>Digital</h1>
+                <br />
+            	<div id="web"><h4>Web sites</h4>
+                	<div class="project" style="clear: both;">
+                    	<div class="project_box_01" id="project_03">
+                        	<img src="images/sites/gamestop/01.jpg" alt="GameStop" /><br />
+                        	<img src="images/sites/gamestop/02.jpg" alt="GameStop" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Year</h4>
+                        	2007 (Redesign 2010)<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	I have been working for GameStop for five years. One of my main projects has been to create and update the site(s) for the Nordic countries. I needed to create a marketplace where we could present our games and new offers. I have also built a pretty advanced CMS for this site.<br />
+                      		<br />
+                        	<h4>Technices</h4>
+                        	HTML, CSS, Javascript, ASP, SQL, Actionscript and MySql Server.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop, Illustrator, Dreamweaver, Flash, Access and phpMyAdmin.<br />
+                        	<br />
+                        	<h4>Other design work</h4>
+                        	<a href="#newsletters" class="proj_link scroll">Newsletters</a>, <a href="#catalogues" class="proj_link scroll">Catalogues &amp; folder</a>, <a href="#posters" class="proj_link scroll">Posters &amp similar</a>, <a href="#external" class="proj_link scroll">External campaigns</a><br />
+                        	<br />
+                        	<div class="link link_div"><a href="http://www.gamestop.se" target="_blank">VISIT SITE</a></div>
+                    	</div>
+                    </div>
+                	<div class="project">
+                		<div class="project_box_01">
+                            <img src="images/sites/lajka/01.jpg" alt="Lajka Visual" /><br />
+                            <img src="images/sites/lajka/02.jpg" alt="Lajka Visual" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Lajka Visual<br />
+                        	<br />
+                        	<h4>Year</h4>
+                        	2011-2012 (Will release in April 2012)<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Lajka Visual contacted me to build the site from a design done in a psd-file. Lajka Visual needed my skills to build the expected functions to the design.<br />
+                        	<br />
+                        	<h4>Technices</h4>
+                        	HTML, CSS, Javascript (Jquery and Ajax) and PHP.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop and Dreamweaver.<br />
+                        	<br />
+                        	<div class="link link_div"><a href="http://www.lajkavisual.se" target="_blank">VISIT SITE</a></div>
+                    	</div>
+                        <!--
+                        EXPAND DIV
+                        <div class="project_descr">Text text text  text text  text text  text text  text text  text text  text text  text text</div>
+                        <hr />
+                        <div class="project_arrow">Contica Solutions logotype brief</div>-->
+               		</div>
+                    <div class="project" style="clear: both; margin-top: 100px;">
+                        <div class="project_box_01">
+                        	<img src="images/sites/pranari/01.jpg" alt="Pranari" /><br />
+                        	<img src="images/sites/pranari/02.jpg" alt="Pranari" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Pranari<br />
+                        	<br />
+                        	<h4>Year</h4>
+                        	2007-2008<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Pranari wanted a website that represented the feeling of the company. They need all from the design to the finished site. I choosed to make it totally in Flash to create smooth animations.<br />
+                      		<br />
+                        	<h4>Technices</h4>
+                        	Photography, HTML and Actionscript. Also Google Adwords.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop, Illustrator, Dreamweaver and Flash.<br />
+                        	<br />
+                        	<h4>Other design work</h4>
+                        	<a href="#logo" class="proj_link scroll">Logotype</a>, <a href="#print" class="proj_link scroll">print</a><br />
+                        	<br />
+                        	<div class="link link_div"><a href="http://www.pranari.se" target="_blank">VISIT SITE</a></div>
+                    	</div>
+                    </div>
+                    <div class="project" style="clear: both; margin-top: 100px;">
+                        <div class="project_box_01">
+                        	<img src="images/sites/contica/01.jpg" alt="Contica" /><br />
+                        	<img src="images/sites/contica/02.jpg" alt="Contica" />
+                        </div>
+                        <div class="project_box_02" id="project_04">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Contica Solutions AB<br />
+                        	<br />
+                        	<h4>Year</h4>
+                        	2009-2010<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	When Contica contacted me they asked for everything from logo to guidelines, print and a site. My mission was to make this company to not look like a typical technology company, but still professional.<br />
+                        	<br />
+                        	<h4>Technices</h4>
+                        	HTML, CSS, ASP and Actionscript.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop, Illustrator, Dreamweaver and Flash.<br />
+                        	<br />
+                        	<h4>Other design work</h4>
+                        	<a href="#logo" class="proj_link scroll">Logotype</a>, <a href="#guidelines" class="proj_link scroll">guidelines</a><br />
+                        	<br />
+                        	<div class="link link_div"><a href="http://www.contica.se" target="_blank">VISIT SITE</a></div>
+                    	</div>
+                    </div>
+                    <div class="project" style="clear: both; margin-top: 100px;">
+                        <div class="project_box_01">
+                        	<img src="images/sites/tradteknik/01.jpg" alt="Trådteknik" /><br />
+                        	<img src="images/sites/tradteknik/02.jpg" alt="Tradteknik" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Trådteknik AB<br />
+                        	<br />
+                        	<h4>Year</h4>
+                        	2009-2010<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	In this project I worked as a consultant through Sighup Point. Trådteknik wanted a new and fresh website. The old one felt onld and tacky. I wanted to make it feel more creative, warm and welcome. In my mission I also built a smaller CMS for the site, so they could control the information.<br />
+                        	<br />
+                        	<h4>Technices</h4>
+                        	HTML, CSS, ASP, SQL and MySql Server.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop, Illustrator, Dreamweaver and phpMyAdmin.<br />
+                        	<br />
+                        	<div class="link link_div"><a href="http://www.tradteknik.se" target="_blank">VISIT SITE</a></div>
+                    	</div>
+                    </div>
+                </div>
+                <div id="newsletter"><h4 class="header_margin">Newsletters</h4>
+                	<div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/newsletters/max_payne/01.jpg" alt="Max Payne newsletter" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Send out our pre-order bonus for Max Payne.<br />
+                        	<br />
+                            <h4>Receivers</h4>
+                        	About 45.000.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop and Apsis Newsletter system (ANP2).
+                    	</div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/newsletters/sale/01.jpg" alt="February Sale" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Newsletter to promote our February sale folder, which I have published online,<br />
+                        	<br />
+                            <h4>Receivers</h4>
+                        	About 75.000.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop and Apsis Newsletter system (ANP2).
+                    	</div>
+                    </div>
+                </div>
+                <div id="exprimental"><h4 class="header_margin">Exprimental</h4>
+                	<div class="project">
+                        <div class="project_box_01">
+                        	<div id="flash">
+                                You don't have Flash player installed...
+                            </div>
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Myself<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	I wanted to learn more about Flash and Actionscript. So I created this game just for fun. It also saved the highscores into a text file (Does not work here).<br />
+                            <br />
+                            Write your name, start and try to hit down the random sticks as much and as fast as you can!
+                            <br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Flash and Illustrator.
+                    	</div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/exprimental/model01.jpg" alt="PÅhoto job" />
+                        </div>
+                        <div class="project_box_02" id="project_01">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Myself<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Explore Photoshop a bit and learn how to create action/motion in the image.<br />
+                        	<br />
+                            <h4>Software</h4>
+                        	Photoshop
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            <div id="print" class="top-margin" style="overflow: hidden;"><h1>Print</h1>
+            	<div id="catalogues"><h4>Catalogues &amp; folders</h4>
+                	<div class="project" id="project_05">
+                        <div class="project_box_01">
+                        	<img src="images/folders/05_pranari/01.jpg" alt="Point of sale folder" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Pranari<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Create a folder for Pranari, discribing all treatments availible at Pranari including price points and contacts.<br />
+                        	<br />
+                            <h4>Format</h4>
+                        	140x93mm + 3mm bleed.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop, Illustrator and Indesign.<br />
+                            <br />
+                        	<div class="link link_div" style="width: 250px;"><a href="pdf/pranari_folder.pdf" target="_blank">DOWNLOAD PDF (2,7MB)</a></div>
+                    	</div>
+                	</div>
+                	<div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/folders/03_holiday2010/01.jpg" alt="GameStop Holiday catalogue 2010" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	2010 GameStop holiday catalogue the Nordic countries(DK, FI, NO and SE). Theme is hot and fire.
+                        	<br />
+                            <h4>Format</h4>
+                        	40 pages. 170x240mm + 3mm bleed. <br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop, Illustrator and Indesign.<br />
+                            <br />
+                        	<div class="link link_div" style="width: 250px;"><a href="images/folders/03_holiday2010/index.html" target="_blank">ONLINE SWE. VERSION (FLASH)</a></div>
+                    	</div>
+                	</div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/folders/02_pos/01.jpg" alt="Point of sale folder" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Create a folder for our distributers. A folder where they with ease can see our different vehicles in our stores, the sizes, placements and what about the costs are.<br />
+                        	<br />
+                            <h4>Format</h4>
+                        	148x210mm + 3mm bleed.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop, Illustrator and Indesign.<br />
+                            <br />
+                        	<div class="link link_div" style="width: 250px;"><a href="pdf/pos.pdf" target="_blank">DOWNLOAD PDF (2,5MB)</a></div>
+                    	</div>
+                	</div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/folders/01_sale2011/01.jpg" alt="GameStop Sale 2011" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Create the GameStop holiday/christmas sale for the Nordic countries (DK, FI, NO and SE). Theme is hot and fire.
+                        	<br />
+                            <h4>Format</h4>
+                        	8 pages. 254x360mm + 3mm bleed.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop, Illustrator and Indesign.<br />
+                            <br />
+                        	<div class="link link_div" style="width: 250px;"><a href="images/01_sale2011/index.html" target="_blank">ONLINE SWE. VERSION (FLASH)</a></div>
+                    	</div>
+                	</div>
+                </div>
+                <div id="posters"><h4 class="header_margin">Posters &amp; similiar</h4>
+                	<div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/posters/diabloiii/01.jpg" alt="Diablo III" /><br />
+                            <img src="images/posters/diabloiii/02.jpg" alt="Diablo III" /><br />
+                            <img src="images/posters/diabloiii/03.jpg" alt="Diablo III" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Create awareness of one of the biggest games coming 2012, Diablo III. Three different posters. One with pre-order message, one with midnight launch and one with a competition. I tried to keep it as clear as possible.<br />
+                        	<br />
+                            <h4>Format</h4>
+                        	A1 horizontal, A1 vertical, A3 and 500x700mm + 3mm bleed to all.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop and Illustrator.
+                    	</div>
+                    </div>
+                	<div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/posters/batman/01.jpg" alt="Batman A3" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Communicate our pre-order deal on Batman: Arkham City.<br />
+                        	<br />
+                            <h4>Format</h4>
+                        	A3 + 3mm bleed.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop and Illustrator.
+                    	</div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/posters/bonus/01.jpg" alt="Bounty Program A4" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	GameStop needed to send out a bonusprogram for the stores in GameStop Nordic. So I created a bounty hunter program. And who aint a better symbol then Jango Fett, the most fearless bounty hunter in Star Wars?<br />
+                            <br />
+                            Obs! This is not the real money the store managers get in bonus, I have changed the numbers for official use.<br />
+                        	<br />
+                            <h4>Format</h4>
+                        	A4 + 3mm bleed.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop and Illustrator.
+                    	</div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/posters/max_payne/01.jpg" alt="Batman A3" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	GameStop needed to send out a bonusprogram for the stores. So I created a bounty hunter program. And who aint a better symbol then Jango Fett, the most fearless bounty hunter in Star Wars?<br />
+                        	<br />
+                            <h4>Format</h4>
+                        	A3 + 3mm bleed.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Photoshop and Illustrator.
+                    	</div>
+                    </div>
+                </div>
+                <div id="external"><h4 class="header_margin">External Campaigns</h4>
+                	<div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/outdoor/aftonbladet/01.jpg" alt="Aftonbladet" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	Create and ad for Aftonbladet in Sweden to push sales on Xbox 360 hardware.
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/outdoor/denmark/01.jpg" alt="External Denmark" /><br />
+                            <img src="images/outdoor/denmark/02.jpg" alt="External Denmark" /><br />
+                            <img src="images/outdoor/denmark/04.jpg" alt="External Denmark" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	A massive external push in Denmark for Nintendo. Ads on Nintendo Wii and Nintendo DS was presented on buses, bus stops and side stands.
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/outdoor/norway/01.jpg" alt="External Norway" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	A push on Xbox 360 in Norway I made for GameStop.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="brand" class="top-margin" style="overflow: hidden;"><h1>Branding</h1>
+            	<div id="logo"><h4>Logotypes</h4>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/logos/01_contica.gif" alt="Contica Solutions" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Contica Solutions AB - Working with system developing and connecting business systems.<br />
+                        	<br />
+                        	<h4>Values</h4>
+                        	Modern, inviting, future, technology.<br />
+                        	<br />
+                        	<h4>Creating the logo</h4>
+                        	Except the values, Contica also have three scopes of practice, and that is what the symbol symbolize.
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/logos/06_gameprotection.jpg" alt="Sighup Point" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	GameStop<br />
+                        	<br />
+                        	<h4>Values</h4>
+                        	Protection, security, stability, modern.<br />
+                        	<br />
+                        	<h4>Creating the logo</h4>
+                        	I made the symbol as a shield with big letters inside to create the feeling of protection and and stability. But it could not look old, so I made it a bit 3D to make it look more modern which fits GameStops general feeling.
+                        </div>
+                    </div>
+                    <div class="project">
+                    	<div class="project_box_01">
+                        	<img src="images/logos/02_pranari.gif" alt="Constract" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Pranari - Thaimassage<br />
+                        	<br />
+                        	<h4>Values</h4>
+                        	Warm, inviting, soft, artistic.<br />
+                        	<br />
+                        	<h4>Creating the logo</h4>
+                        	When creating this logo I did not want the feeling to be as a normal thai massage feels and look. I wanted to make it look more scandinavian, modern and simple.
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/logos/03_constract.gif" alt="Pranari - Thaimassage" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Constrakt AB - Working as an consultant with contracts for building contractors.<br />
+                        	<br />
+                        	<h4>Values</h4>
+                        	Constraction, creativity.<br />
+                        	<br />
+                        	<h4>Creating the logo</h4>
+                        	I choosed to not use a symbol. In the constract logo the first letter "C" can be used as a symbol. By tvisting the logo and making the first letter bigger I create a constructive feeling.
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01" id="project_02">
+                        	<img src="images/logos/04_sync.gif" alt="Sighup Point" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Sync - Hair &amp; makeup studio<br />
+                        	<br />
+                        	<h4>Values</h4>
+                        	Luxury, professional, creativity, style, class.<br />
+                        	<br />
+                        	<h4>Creating the logo</h4>
+                        	The font symbolize style, class and luxury. The symbol symbolize luxury and creativity.
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/logos/05_sighup.gif" alt="Sighup Point" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Sighup Point - Working with computer networks<br />
+                        	<br />
+                        	<h4>Values</h4>
+                        	Technology, future, speed.<br />
+                        	<br />
+                        	<h4>Creating the logo</h4>
+                        	The symbol is an illustration of a comet, symbolising speed.
+                        </div>
+                    </div>
+                </div>
+                <div id="guidelines"><h4 class="header_margin">Guidelines</h4>
+                	<div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/guidelines/amata/01.jpg" alt="Amata guidelines" /><br />
+                            <img src="images/guidelines/amata/03.jpg" alt="Amata guidelines" /><br />
+                            <img src="images/guidelines/amata/06.jpg" alt="Amata guidelines" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Amata<br />
+                        	<br />
+                        	<h4>Creating the guidelines</h4>
+                        	When I worked in Thailand I got the oppertunity to create guidelines for Amata. I created a guideline folder in 22 pages which helped them with everything from logotype treatment, colors, typefaces, stationary, how to use thier Powerpoint template and more.<br />
+                            <br />
+                            <div class="link link_div" style="width: 250px;"><a href="pdf/amata_guidelines.pdf" target="_blank">DOWNLOAD PDF (8MB)</a></div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/guidelines/constrakt/01.jpg" alt="Constrakt guidelines" />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Constrakt<br />
+                        	<br />
+                        	<h4>Creating the guidelines</h4>
+                        	Constrakt wanted just the basic guidelines for thier brand. So I created the guidelines containing the logos, colors and typeface.<br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div id="stationary"><h4 class="header_margin">Stationary</h4>
+                	<div class="project">
+                        <div class="project_box_01">
+                        	<img src="images/stationary/constrakt/01.png" alt="Constrakt Business Card" /><br />
+                            <img src="images/stationary/constrakt/02.png" alt="Constrakt " />
+                        </div>
+                        <div class="project_box_02">
+                        	<hr style="margin: 0 0 20px 0;" />
+                        	<h4>Client</h4>
+                        	Constrakt<br />
+                        	<br />
+                        	<h4>Mission</h4>
+                        	To the left you can see the business card. Both front and backside. The corner is cuted off from the paper.<br />
+                            <br />
+                            Below you can see the letter head I created for Constrakt.<br />
+                        	<br />
+                        	<h4>Software</h4>
+                        	Illustrator.<br />
+                            <br /><h4>Other design work</h4>
+                        	<a href="#logo" class="proj_link scroll">Logotype</a>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            <div id="resume" class="top-margin" style="overflow: hidden; clear: both;"><h1>Resume</h1>
+            	<div class="fl" style="width: 300px; margin-right: 30px; overflow: hidden;"><span class="footer_small_header">Company/employer</span><br />
+                Lajka Visual<br />
+                GameStop<br />
+                Pranari<br />
+                Sighup Point<br />
+                Contica Solutions<br />
+                Tradimus<br />
+                Barlow Wine &amp; Beer<br />
+                IC Web Co., Ltd – Thailand (Internship)<br />
+                Mellerstedt Reklam<br />
+                CSN (Assignment through Manpower)<br />
+                Blaster Interactive<br />
+                Military Service<br />
+                <br />
+                <span class="footer_small_header">School/course</span><br />
+                Cornerstone<br />
+                Hyper Island – School of New Media Design<br />
+                Upper secondary school<br />
+                Elementary School
+                </div>
+                <div class="fl" style="width: 300px; margin-right: 30px; overflow: hidden;"><span class="footer_small_header">Job position/Assignment</span><br />
+                Freelancing Interface Developer<br />
+                Graphic Designer &amp; Web Developer<br />
+                Brand, Graphic &amp; Web Designer<br />
+                Freelancing Web Designer &amp; Developer<br />
+                Freelancing Brand &amp; Web Designer<br />
+                Web Designer &amp; Salesperson<br />
+                Freelancing Web Designer &amp; Developer<br />
+                Web, Flash &amp; Brand Designer<br />
+                Web Designer<br />
+                Interface Designer &amp; Developer<br />
+                Owner, Web Designer<br />
+                Recon Leader<br />
+                <br />
+                <span class="footer_small_header">Education/specialization</span><br />
+                Customizing SharePoint Portal Server<br />
+                Design &amp; Technology<br />
+                Media Program - Advertising &amp; Information<br />
+                --
+                </div>
+                <div class="fl" style="width: 300px;"><span class="footer_small_header">Year(s)</span><br />
+                2012 - 2012<br />
+                2007 - 2012<br />
+                2007 *<br />
+                2009 - 2010<br />
+                2009 - 2010<br />
+                2003 - 2007<br />
+                2005 - 2006<br />
+                2002 - 2003<br />
+                2000 - 2001<br />
+                2000 - 2001<br />
+                2000 - 2001<br />
+                1998 - 1999<br />
+                <br />
+                <span class="footer_small_header">Year(s)</span><br />
+                2005 - 2005<br />
+                2001 - 2003<br />
+                1995 - 1998<br />
+                1984 - 1993
+                </div>
+                <h4 style="margin-top: 400px;">KNOWLEDGE</h4>
+                <span class="footer_small_header">SOFTWARE</span><br />
+                Photoshop, Illustrator, Indesign, Dreamweaver, CS Live (CS Review and CS BrowserLab), Flash, MS Word, MS Exel, MS Powerpoint, MS Sharepoint, Google Analytics, Google Adwords and Apsis Newsletter Pro.<br />
+                <br />
+                <span class="footer_small_header">DATABASES</span><br />
+                MySql, MS SQL Server and MS Access.<br />
+                <br />
+                <span class="footer_small_header">PROGRAMMING</span><br />
+                HTML, CSS, Javascript (Jquery and Ajax), ASP, PHP, SQL and Actionscript.<br />
+                <br />
+                <span class="footer_small_header">LANGUAGES</span><br />
+                Fluent swedish and english<br />
+                <br />
+                <span class="footer_small_header">Miscellaneous</span><br />
+				Driver's licence and car<br />
+                <br />
+                <div class="cv link_div"><a href="pdf/JoakimBorg.pdf">DOWNLOAD CV (PDF)</a></div>
+            </div>
+        </div>
+        <!-- Content end -->
+        <!-- Contact start -->
+        <div class="contact_border" id="contact">
+        </div>
+        <div class="contact">
+        	<div class="contact_content">
+            	<div style="overflow: hidden;">
+                    <div class="fl" style="margin-right: 30px; width: 620px">
+                    <span class="footer_small_header">WANT TO TALK JQUERY? THE BEST COLOR? OR MAYBE OFFER ME A JOB?</span>
+                    <h2>CONTACT JOAKIM BORG</h2>
+                    <div id="response"></div>
+                    <div id="loading">Hold on... Sending message...</div>
+                    <div id="message-sent">And now it is sent!</div>
+                    <div id="error-name">Is that really a name? It seems wierd. Try again.</div>
+                    <input type="text" value="Your name..." class="formtext" id="name" />
+                    <div id="error-from">Nah, that is not a valid email adress...</div>
+                    <input type="text" value="Your email..." class="formtext" id="from" />
+                    <div id="error-content">Did you actually forget to write me a message!?</div>
+                    <textarea class="formtext" rows="8" cols="50" id="content">Write me something...</textarea><br />
+                    <input type="submit" class="submit" alt="Submit" id="submit-button" value="" />
+                    </div>
+                    <div class="fl" style="300px;">
+                    <span class="footer_small_header">TELEPHONE</span>
+                    <h3 style="margin: -5px 0 23px 0;">+46 (0)70-82 82 22</h3>
+                    
+                    <span class="footer_small_header">EMAIL</span>
+                    <h3 style="margin: -5px 0 23px 0;">KONTAKT@JBORG.SE</h3>
+                    <span class="footer_small_header">OLD SCHOOL MAIL</span>
+                    <h3 style="margin: -5px 0 23px 0;">PER ALBIN HANSSONS VÄG 61B<br />
+                    SE - 214 63 MALMÖ</h3>
+                    <span class="footer_small_header">SOCIAL LINKS</span><br />
+                    <a href="http://se.linkedin.com/in/joakimborg"><img src="images/f_li.png" alt="Linked in" class="fl hover" style="margin-right: 15px;" /></a>
+                    <a href="https://twitter.com/#!/Joakim_Borg"><img src="images/f_tw.png" alt="Twitter" class="fl hover" style="margin-right: 15px;" /></a>
+                    <a href="http://www.facebook.com/JoakimBorg0"><img src="images/f_fb.png" alt="Facebook" class="fl hover" /></a>
+                    </div>
+				</div>
+                <div style="clear: both; margin-bottom: 20px;">
+                <h3>Reference: Frank Centomain</h3>
+                <span class="footer_small_header">International Merchendising Director @ GameStop</span>
+                <div style="font-style: italic; color: #FFF; font-size: 18px;">
+                "I have known Joakim over 4 years during which time he has most recently worked as Designer in my department. During this period, he demonstrates all qualities that employers seek in searching for promotable employees. I have been consitently impressed with Joakim's attitude and productivity during the time that he has worked for me."</div>
+                </div>
+                <div style="clear: both;">
+                <h3>Reference: Linus Löfgren</h3>
+                <span class="footer_small_header">Art Director @ Lajka Visual</span>
+                <div style="font-style: italic; color: #FFF; font-size: 18px;">
+                "Joakim är en grym kille som man kan lita på i alla väder. Han är lite som super mario bros. Bra på det mesta. Behärskar både kodning och design. En av de bästa sakerna med Joakim är att han alltid är så engagerad och intresserad av att lära sig nytt."</div>
+                </div>
+                
+        	</div>
+        </div>
+        <!-- Contact end -->
+        <!-- Living elements end -->
+
+        <!-- Ending scripts -->
+        <script type="text/javascript" src="jquery/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="jquery/jquery.cycle.lite.js"></script>
+        <script type="text/javascript" src="jquery/jquery_scripts_end.js"></script>
+        <script type="text/javascript">
+		//GOOGLE ANALYTICS
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		try {
+		var pageTracker = _gat._getTracker("UA-16170913-1");
+		pageTracker._trackPageview();
+		} catch(err) {}
+		</script>
+    </body>
+</html>

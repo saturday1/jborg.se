@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/usersearch/build/static/css/main.ac266490.css",
+    "main.js": "/usersearch/build/static/js/main.6915c7ff.js",
+    "static/js/787.f0af03eb.chunk.js": "/usersearch/build/static/js/787.f0af03eb.chunk.js",
+    "index.html": "/usersearch/build/index.html",
+    "main.ac266490.css.map": "/usersearch/build/static/css/main.ac266490.css.map",
+    "main.6915c7ff.js.map": "/usersearch/build/static/js/main.6915c7ff.js.map",
+    "787.f0af03eb.chunk.js.map": "/usersearch/build/static/js/787.f0af03eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac266490.css",
+    "static/js/main.6915c7ff.js"
+  ]
+}

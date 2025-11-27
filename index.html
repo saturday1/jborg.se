@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="https://kit.fontawesome.com/c1790fdcae.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="initial-scale=1">
+		
+		<title>Joakim Borg - Front end Developer & UI/UX Designer</title>
+
+		<link rel="shortcut icon" href="global/img/favicon.ico">
+		<link href="global/css/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<main>
+
+			<header class="logo__wrapper">
+				<h1>
+					<img src="global/img/logo_icon.svg" alt="JB icon">
+				</h1>
+        <div class="about">
+          <h2><i class="fas fa-exclamation-circle"></i> Hello</h2>
+          <p>I am a hybrid moving around in the front end space of the web (mostly). UX/UI-design, Accessibility, HTML, CSS/SASS, JavaScript, React, TypeScript, Angular JS and more.</p>
+          <p>I am also a dad, golfer, caravan owner, friend, padel player, husband, house owner and a lot more.</p>
+        </div>
+			</header>
+			<div>
+        
+        <div class="links">
+
+          <h2><i class="fas fa-tools"></i> Playground / work</h2>
+          <span>
+            <a href="//jsfiddle.net/user/saturday99">
+              <i class="fab fa-jsfiddle"></i>
+              <span>JSFiddle: Code</span>
+            </a>
+          </span>
+          <span>
+            <a href="//www.behance.net/joakim_borg">
+              <i class="fab fa-behance-square"></i>
+              <span>Behance: Design</span>
+            </a>
+          </span>
+
+          <h2><i class="fas fa-home"></i> Some sites I have designed and programmed</h2>
+          <span>
+            <a href="https://invitesport.com/">
+              <i class="fas fa-arrow-right"></i>
+              <span>Invitesport.com</span>
+            </a>
+          </span>
+          <span>
+            <a href="https://cupinvite.com/">
+              <i class="fas fa-arrow-right"></i>
+              <span>cupinvite.com</span>
+            </a>
+          </span>
+          <span>
+            <a href="https://bibliotekuppsala.se/">
+              <i class="fas fa-arrow-right"></i>
+              <span>bibliotekuppsala.se</span>
+            </a>
+          </span>
+          <span>
+            <a href="https://cmweb.cupmanager.net/">
+              <i class="fas fa-arrow-right"></i>
+              <span>cmweb.cupmanager.net</span>
+            </a>
+          </span>
+          <span>
+            <a href="https://www.gotabiblioteken.se/">
+              <i class="fas fa-arrow-right"></i>
+              <span>gotabiblioteken.se</span>
+            </a>
+          </span>
+
+          <h2><i class="fas fa-rocket"></i> Contact</h2>
+          <span>
+            <a href="tel:+4670-420 57 60">
+              <i class="fas fa-mobile-alt"></i>
+              <span>+46(0)70-420 57 60</span>
+            </a>
+          </span>
+          <span>
+            <a href="mailto:joakim.borg.1978@gmail.com">
+              <i class="far fa-envelope"></i>
+              <span>joakim.borg.1978@gmail.com</span>
+            </a>
+          </span>
+          <span>
+            <a href="//www.linkedin.com/in/joakimborg">
+              <i class="fab fa-linkedin"></i>
+              <span>Follow me @ LinkedIn</span>
+            </a>
+          </span>
+
+        </div>
+			</div>
+
+		</main>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+		// Google analytics
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-16170913-1', 'auto');
+		ga('send', 'pageview');
+		
+		// Track clicks on my links
+		jQuery('article a').each(function(){
+	
+			// If click event happends on a link
+			jQuery(this).on("click", function() {
+
+				// Get title attr-text from link
+				var aTitle = 'Visitor clicked: ' + jQuery(this).attr('title');
+
+				// Send to GA
+				ga('send', {
+					hitType: 'event',
+					eventCategory: 'jborg.se links',
+					eventAction: 'pressed-a-link',
+					eventLabel: aTitle
+				});
+			});
+		});
+
+		</script>
+	</body>
+
+</html>

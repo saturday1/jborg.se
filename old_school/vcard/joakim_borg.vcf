@@ -1,0 +1,12 @@
+begin:vcard
+version:3.0
+prodid:Microsoft-MacOutlook/14.14.0.111121
+UID:ABE49081-B544-4B5B-AB59-EF7A3EA93B77
+fn;charset=utf-8:Joakim Borg
+n;charset=utf-8:Borg;Joakim;;;
+title;charset=utf-8:Designer & Web Developer
+adr;charset=utf-8;type=work;type=pref:;;Per Albin Hanssons Väg 61B;Malmö;;21463;Sweden
+label;charset=utf-8;type=work;type=pref:Per Albin Hanssons Väg 61B\n21463 Malmö\nSweden
+tel;charset=utf-8;type=cell:+46705828222
+email;charset=utf-8;type=internet;type=pref;type=work:kontakt@jborg.se
+end:vcard

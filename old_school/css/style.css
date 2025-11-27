@@ -1,0 +1,101 @@
+ul.sdt_menu{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size:14px;
+	width:960px;
+}
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.sdt_menu li{
+	float:left;
+	width:160px;
+	height:65px;
+	position:relative;
+	cursor:pointer;
+}
+ul.sdt_menu li > a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:160px;
+	height:65px;
+	z-index:12;
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:65px;
+	z-index:100;
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:5px;
+	left:0px;
+	width:160px;
+	height:60px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	background-color: #151515;
+	top:65px;
+	width:160px;
+	height:0px;
+	left:0px;
+	z-index:14;
+	/*-moz-box-shadow:0px 0px 2px #000 inset;
+	-webkit-box-shadow:0px 0px 2px #000 inset;
+	box-shadow:0px 0px 2px #000 inset;*/
+}
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+	margin-left:10px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #000;
+}
+ul.sdt_menu li span span.sdt_link{
+	font-family: "RoadWay", "Myriad Pro", "Trebuchet MS", sans-serif;
+	color:#fff;
+	font-size:30px;
+	float:left;
+	clear:both;
+}
+ul.sdt_menu li span span.sdt_descr{
+	color:#0CF;
+	float:left;
+	clear:both;
+	width:145px; /*For dumbass IE7*/
+	font-size:12px;
+	letter-spacing:1px;
+}
+ul.sdt_menu li div.sdt_box{
+	display:block;
+	position:absolute;
+	width:160px;
+	overflow:hidden;
+	height:160px;
+	top:65px;
+	left:0px;
+	display:none;
+	background-color: #000;
+}
+ul.sdt_menu li div.sdt_box a{
+	float:left;
+	clear:both;
+	line-height:25px;
+	color:#0CF;
+}
+ul.sdt_menu li div.sdt_box a:first-child{
+	margin-top:15px;
+}
+ul.sdt_menu li div.sdt_box a:hover{
+	color:#fff;
+}

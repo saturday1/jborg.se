@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* HEAD MENU */
+ul.sdt_menu{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size:14px;
+	width:960px;
+}
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
+}
+ul.sdt_menu li{
+	float:left;
+	width:160px;
+	height:65px;
+	position:relative;
+	cursor:pointer;
+}
+ul.sdt_menu li > a{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:160px;
+	height:65px;
+	z-index:12;
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:65px;
+	z-index:100;
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:5px;
+	left:0px;
+	width:160px;
+	height:60px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	background-color: #151515;
+	top:65px;
+	width:160px;
+	height:0px;
+	left:0px;
+	z-index:14;
+	/*-moz-box-shadow:0px 0px 2px #000 inset;
+	-webkit-box-shadow:0px 0px 2px #000 inset;
+	box-shadow:0px 0px 2px #000 inset;*/
+}
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+	margin-left:10px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #000;
+}
+ul.sdt_menu li span span.sdt_link{
+	font-family: "RoadWay", "Myriad Pro", "Trebuchet MS", sans-serif;
+	color:#fff;
+	font-size:30px;
+	float:left;
+	clear:both;
+}
+ul.sdt_menu li span span.sdt_descr{
+	color:#0CF;
+	float:left;
+	clear:both;
+	width:145px; /*For dumbass IE7*/
+	font-size:12px;
+	letter-spacing:1px;
+}
+ul.sdt_menu li div.sdt_box{
+	display:block;
+	position:absolute;
+	width:160px;
+	overflow:hidden;
+	height:160px;
+	top:65px;
+	left:0px;
+	display:none;
+	background-color: #000;
+}
+ul.sdt_menu li div.sdt_box a{
+	float:left;
+	clear:both;
+	line-height:25px;
+	color:#0CF;
+}
+ul.sdt_menu li div.sdt_box a:first-child{
+	margin-top:15px;
+}
+ul.sdt_menu li div.sdt_box a:hover{
+	color:#fff;
+}
+
+/* TOP PROJECTS */
+.project_arrow {
+	margin: 0 0 15px 0;
+	width: 960px;
+	height: 24px;
+	text-align: center;
+	background: url(images/arrow_project.png) no-repeat;
+	padding: 5px 0 0 0;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.project_arrow_back {
+	margin: 0 0 15px 0;
+	width: 960px;
+	height: 24px;
+	text-align: center;
+	background: url(images/arrow_project2.png) no-repeat;
+	padding: 5px 0 0 0;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.project{
+	overflow: hidden;
+	margin-bottom: 100px;
+	clear: both;
+}
+
+.project_box_01 {
+	float: left;
+	width: 630px;
+	margin-right: 30px;
+}
+
+.project_box_02 {
+	float: left;
+	width: 300px;
+}
+
+.top_projects{
+	width: 100%;
+	height:600px;
+	background: #000 url(../images/wrap_bg.jpg) no-repeat center;
+}
+
+.top_project{
+	 height: 100%;
+	 width: 100%;
+}
+
+.top_projects_center{
+	height: 65px;
+	width: 960px;
+	margin: auto;
+	position: relative;
+}
+
+/* FORM */
+.formtext{
+	background: rgba(0, 0, 0, 0.3);
+	border:  rgba(0, 204, 255, 0.3) 1px solid;
+	width: 620px;
+	font-size: 16px;
+	color: #CCC;
+	font-style: italic;
+	font-weight: lighter;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+textarea {
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	resize: none;
+	font-size: 18px;
+	margin: 0;
+}
+
+.submit {
+	background: url(../images/send.png)  no-repeat; border: none;
+	width: 89px;
+	height: 28px;
+	margin: 0;
+}
+
+.submit:hover {
+	background: url(../images/send_hover.png)  no-repeat; border: none;
+	cursor: pointer;
+}
+
+/* FORM MSG DIVS */
+#error-name, #error-from, #error-content{
+	display: none;
+	color: #000;
+	background-color: #0CF;
+	padding: 5px;
+	width: 622px;
+}
+
+#loading, #message-sent{
+	color: #FFF;
+	display: none;
+	color: #29d68e;
+}
+
+img#follower{
+	position: absolute;
+}
+
+div#bottomlayer{
+	width: 100%;
+	height: 79px;
+	position: relative;
+	display: none;
+}
+

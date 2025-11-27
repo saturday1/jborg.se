@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background:#FFF;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+a, a:active{
+	font-family: "RoadWay", "Myriad Pro", "Trebuchet MS", sans-serif;
+	color: #F4F4F4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFF;
+}
+
+a.proj_link, a.proj_link:active{
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	color: #0CF;
+	text-decoration: none;
+}
+
+a.proj_link:hover {
+	text-decoration: underline;
+}
+
+h1{
+	font-family: "RoadWay", "Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size: 45px;
+	color: #0CF;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.6), 3px 3px 0 rgba(130,130,130,0.3);
+	margin: 0 0 10px 0;
+	text-transform:uppercase;
+	font-weight: normal;
+}
+
+h2{
+	font-family: "RoadWay", "Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size: 65px;
+	color: #FFF;
+	margin-bottom: 10px;
+	text-transform:uppercase;
+	font-weight: normal;
+	margin: -10px 0 0 0;
+	padding: 0;
+}
+
+h3{
+	font-family: "RoadWay", "Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size: 30px;
+	color: #FFF;
+	margin-bottom: 10px;
+	text-transform:uppercase;
+	font-weight: normal;
+	margin: 30px 0 -5px 0;
+	padding: 0;
+}
+
+h4{
+	font-family: "RoadWay", "Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size: 25px;
+	color: #0CF;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.6), 3px 3px 0 rgba(130,130,130,0.3);
+	margin: 0 0 5px 0;
+	text-transform:uppercase;
+	font-weight: normal;
+}
+
+hr {
+	color: #fff;
+	background-color: #fff;
+	border: 2px dotted #333;
+	border-style: none none dotted;
+	height: 1px;
+	margin: 4px 0 4px 0;
+}
+
+.header_margin{
+	margin-top: 250px;
+}
+
+.footer_small_header{
+	color: #0CF;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform:uppercase;
+}
+
+/* CHANGE SELECTION COLOR */
+::-moz-selection {
+   	background-color: #0CF;
+   	color: #000;
+}
+
+::selection {
+  	background-color: #0CF;
+	color: #000;
+}
+
+/* REMOVE DOTTED OUTLINE ON IMAGES AND LINKS */
+:focus {
+	-moz-outline-style: none;
+}
+
+a {
+   	outline: 0;
+}
+
+.fl{
+	float: left;
+}
+
+.link{
+	font-size: 25px;
+	text-align: center;
+	width: 100px;
+	margin: 0 0 6px 6px;
+	padding: 5px 5px 5px 5px;
+	background-color: #0CF;
+	-moz-border-radius: 10x;
+	border-radius: 10px;
+	-moz-box-shadow: 0px 0px 6px #666;
+	-webkit-box-shadow: 0px 0px 6px #666;
+	box-shadow: 0px 0px 6px #666;
+}
+
+.link:hover{
+	cursor: pointer;
+	background-color: #000;
+}
+
+.cv{
+	font-size: 30px;
+	text-align: center;
+	width: 210px;
+	height: 50px;
+	margin: 0 0 6px 6px;
+	padding: 12px 10px 0 10px;
+	background-color: #0CF;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 0px 0px 6px #666;
+	-webkit-box-shadow: 0px 0px 6px #666;
+	box-shadow: 0px 0px 6px #666;
+}
+
+.cv:hover{
+	cursor: pointer;
+	background-color: #000;
+}

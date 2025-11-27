@@ -1,0 +1,198 @@
+:root {
+  --blue-dark: 36, 72, 85;
+  --red: 230, 72, 51;
+  --brown: 135, 79, 65;
+  --blue-light: 144, 174, 173;
+  --brown-light: 251, 233, 208;
+  --rounded: 2rem;
+  --rounded-full: 500px;
+  --card-shadow: 0px 7px 20px 0px rgba(150,150,150, .3);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0 0 2rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  max-height: 100%;
+  background: rgba(var(--brown-light), .9);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.top {
+  height: 100dvh;
+  background: url('background.webp');
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+header {
+  background: white;
+  padding: 1rem 2rem;
+  background: rgba(var(--blue-dark), .95);
+  color: white;
+}
+
+.adress {
+  background: black;
+  padding: .25rem .75rem;
+  font-size: .8rem;
+
+  @media only screen and (min-width: 410px) {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  background: white;
+  padding: 2rem;
+  background: rgba(var(--blue-dark), .95);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.header_content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+footer {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4rem;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+footer h2 {
+  margin: 0;
+}
+
+footer p {
+  max-width: 30rem;
+}
+
+footer a {
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-family: "WindSong", cursive;
+  font-size: 2rem;
+
+  @media only screen and (min-width: 410px) {
+    font-size: 3rem;
+  }
+}
+
+.content {
+  margin-top: -20px;
+  padding: 0 1.5rem;
+}
+
+.content_box {
+  background: white;
+  width: 100%;
+  max-width: 50rem;
+  margin: auto auto 3rem auto;
+  border-radius: var(--rounded);
+  padding: 2rem;
+  -webkit-box-shadow: var(--card-shadow);
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+.content_box ol li{
+  margin-bottom: .5rem;
+}
+
+.content_box.start {
+  background: rgba(var(--brown-light), .9);
+  margin: 0;
+  padding: 1rem;
+
+  @media only screen and (min-width: 410px) {
+    padding: 2rem;
+  }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.menu a {
+  background: rgb(var(--red));
+  padding: .5rem 1rem;
+  color: white;
+  border-radius: var(--rounded-full);
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+
+  @media only screen and (min-width: 410px) {
+    padding: 1rem 2rem;
+  }
+}
+
+.menu a:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  background: rgb(var(--brown));
+}
